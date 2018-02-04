@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+	<LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/news_detail_tbar"
+            android:text="校 园 风 采"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="19dip"
+            android:textStyle="bold" />
+    </LinearLayout>   
+    <me.maxwin.view.XListView
+        android:id="@+id/list"
+        android:scrollbars="vertical"
+         android:fastScrollEnabled="true"
+         android:background="#d3d3d3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         />
+
+</LinearLayout>

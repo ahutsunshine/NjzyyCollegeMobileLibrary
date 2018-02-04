@@ -1,0 +1,100 @@
+<LinearLayout 
+   android:layout_width="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_height="fill_parent"
+   android:orientation="vertical" >
+ <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:orientation="horizontal">
+       <Button         
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="新     闻"
+            android:textSize="8pt"
+            android:textColor="@android:color/white"
+            android:background="@drawable/news_detail_tbar"
+            />
+    </LinearLayout>
+
+<TabHost 
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="top">
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        
+        >
+         <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top" 
+            />
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+             />
+       
+    </LinearLayout>
+</TabHost>
+</LinearLayout>
+
+
+<!-- <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/darker_gray"
+    tools:context=".MainActivity" >-->
+
+<!--     <LinearLayout 
+        android:id="@+id/information"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
+    <LinearLayout 
+        android:id="@+id/news_linear1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:orientation="vertical" 
+        android:background="@android:color/background_light"> 
+        <RadioGroup 
+            android:id="@+id/radiogroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <RadioButton 
+            android:id="@+id/libraryNews"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/libraryNews" 
+            />              		<RadioButton 
+            android:id="@+id/libraryNotice"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/libraryNotice" 
+            /> 
+            </RadioGroup>             	
+    </LinearLayout> 
+     <LinearLayout 
+        android:id="@+id/news_linear2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@android:color/darker_gray" >
+		<ListView 
+		    android:id="@android:id/list"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:drawSelectorOnTop="true"
+    		android:scrollbars="vertical"
+		    ></ListView>
+        </LinearLayout>
+        </LinearLayout>
+     --> 

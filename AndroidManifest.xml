@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.iMobileLib.NjutcmMobileLibrary"
+    android:versionCode="18"
+    android:versionName="1.4.1" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.CAMERA" >
+    </uses-permission>
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.MenuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity android:name="cn.iMobileLib.NjutcmMobileLibrary.SubjectActivity" >
+        </activity>
+        <activity android:name="cn.iMobileLib.NjutcmMobileLibrary.NewsActivity" >
+        </activity>
+        <activity android:name="cn.iMobileLib.NjutcmMobileLibrary.KSearchActivity" >
+        </activity>
+        <activity android:name="cn.iMobileLib.NjutcmMobileLibrary.SearchlibraryActivity" >
+        </activity>
+        <activity android:name="cn.iMobileLib.NjutcmMobileLibrary.NewsTextActivity" >
+        </activity>
+        <activity android:name="com.huewu.pla.sample.SchoolImageActivity" >
+        </activity>
+        <activity
+            android:name="com.huewu.pla.sample.SchoolImageViewerActivty"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.NewDetailActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.NewBookActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.SearchBookActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.BookDetailActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.BookISBNDetailActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.ImageShower"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <!-- 新闻tab -->
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.NewsListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.NewsDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="cn.iMobileLib.NjutcmMobileLibrary.DetailShowActivity" />
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.SchoolNewsListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.SchoolNewsDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.SocialNewsListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.SocialNewsDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 知识检索 -->
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.KSearchListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.KSearchDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.KSearchReadingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 楼层介绍 -->
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.FloorActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.FloorDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 预约信息 -->
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.ReservationHistoryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.HelpActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.DepartmentInforActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.SettingActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.GPRSControlActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.FeedbackActivity"
+            android:windowSoftInputMode="adjustUnspecified|adjustResize" 
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.DepartmentList"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.HeadTalkActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.TalkInforActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.LoginActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.MyLibraryActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.UserInfoActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.MyCurrentBorrowActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.MyBorrowHistoryActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.TestActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.BookDetailCopyActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.NewBookDetailActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.NewBookDetailCopyActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.NewsDetailCopyActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.SchoolNewsDetailCopyActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.SocialNewsDetailCopyActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.BreakRulesInfoActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.ReaderSuggestionActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.CampusSceneryActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- Required -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true" >
+            <intent-filter android:priority="1000" > <!-- since 1.3.5 -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" /> <!-- since 1.3.5 -->
+                <category android:name="cn.iMobileLib.NjutcmMobileLibrary" /> <!-- since 1.3.5 -->
+            </intent-filter> <!-- since 1.3.5 -->
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <!-- 邮件 -->
+        <activity
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.EmailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="cn.iMobileLib.NjutcmMobileLibrary" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+        <receiver
+            android:name="cn.iMobileLib.NjutcmMobileLibrary.PushReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" /> <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+                <category android:name="cn.iMobileLib.NjutcmMobileLibrary" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="Default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="a47f509a73b15013ee5433dd" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Default" />
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="51dcb85b56240b4936022a72" />
+
+        <service
+            android:name="com.umeng.common.net.DownloadingService"
+            android:exported="true"
+            android:process=":DownloadingService" />
+    </application>
+
+    <permission
+        android:name="cn.iMobileLib.NjutcmMobileLibrary.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="cn.iMobileLib.NjutcmMobileLibrary.permission.JPUSH_MESSAGE" />
+
+</manifest>

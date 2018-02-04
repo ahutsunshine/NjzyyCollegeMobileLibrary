@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#d3d3d3"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/news_detail_tbar"
+            android:gravity="center"
+            android:text="知 识 检 索"
+            android:textColor="#ffffff"
+            android:textSize="19dip"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="180dip"
+            android:layout_marginLeft="50dip"
+            android:layout_marginRight="50dip"
+            android:background="@drawable/new_shape_all"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <Spinner
+                    android:id="@+id/spLanguage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:entries="@array/ksearch_language"
+                    android:text="中文" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dip"
+                    android:text="▼" />
+
+                <ImageView
+                    android:id="@+id/ivDownList"
+                    android:layout_width="40dip"
+                    android:layout_height="30dip"
+                    android:layout_marginLeft="30dip"
+                    android:onClick="imgClick" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="▼" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="25dip"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/search_filter"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/etParam"
+                    android:layout_width="130dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dip"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="请输入关键词"
+                    android:textSize="8pt" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="soundClick"
+                    android:src="@android:drawable/ic_btn_speak_now" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="140dip"
+                android:layout_height="30dip"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="20dip"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/book_search"
+                    android:onClick="btnClick" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dip"
+                    android:text="提示：点开中文或数据库名称，可以有选择不同的选项哦" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

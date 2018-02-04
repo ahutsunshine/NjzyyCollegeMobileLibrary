@@ -1,0 +1,63 @@
+﻿<LinearLayout 
+    android:layout_width="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+ <RelativeLayout  
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/settingbutton"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="设      置"
+            android:textSize="8pt"
+            android:textColor="@android:color/white"
+            android:background="@drawable/news_detail_tbar"
+            />
+   	  <Button 
+            android:id="@+id/SetBackButton"
+            android:layout_width="42dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/back_bg1"
+            android:textColor="#ffffff"/>
+          </RelativeLayout>
+          <LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"             
+             android:background="#d3d3d3"
+             android:orientation="vertical" >
+          <RelativeLayout android:layout_height="wrap_content"
+				android:tag="1" android:paddingRight="10dip" android:paddingLeft="10dip"
+				android:clickable="true" android:background="@drawable/setting_shape"
+				android:layout_width="wrap_content" android:layout_marginTop="30dip"
+				android:layout_marginLeft="10dip"
+             	android:layout_marginRight="10dip"
+				android:onClick="relClick">
+				<TextView android:padding="15dip" android:text="流量监控"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true" android:textColor="#000000"
+					android:textSize="8pt" android:layout_width="wrap_content"></TextView>
+				<ImageView android:src="@drawable/settings_arrow"
+					android:layout_alignParentRight="true" android:layout_height="wrap_content"
+					android:layout_centerVertical="true" android:layout_width="wrap_content"></ImageView>
+			</RelativeLayout>
+<!--			<RelativeLayout android:layout_height="wrap_content"
+				android:tag="2" android:paddingRight="10dip" android:paddingLeft="10dip"
+				android:clickable="true" android:background="@drawable/setting_shape"
+				android:layout_width="wrap_content" android:layout_marginTop="10dip"
+				android:layout_marginLeft="10dip"
+             android:layout_marginRight="10dip"
+				android:onClick="relClick">
+				<TextView android:padding="15dip" android:text="意见反馈"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true" android:textColor="#000000"
+					android:textSize="8pt" android:layout_width="wrap_content"></TextView>
+				<ImageView android:src="@drawable/settings_arrow"
+					android:layout_alignParentRight="true" android:layout_height="wrap_content"
+					android:layout_centerVertical="true" android:layout_width="wrap_content"></ImageView>
+			</RelativeLayout>-->
+			</LinearLayout>
+          </LinearLayout>

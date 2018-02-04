@@ -1,0 +1,489 @@
+﻿<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#d3d3d3"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/news_detail_tbar"
+            android:text="图书采集部"
+            android:textColor="@android:color/white"
+            android:textSize="10pt" />
+
+        <Button 
+            android:id="@+id/back"
+            android:layout_width="42dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/back_bg1"
+            android:textColor="#ffffff"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#d3d3d3"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="30dip"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dip"
+                        android:background="#aa0000"
+                        android:gravity="left"
+                        android:text="部主任"
+                        android:textColor="@android:color/white"
+                        android:textSize="10pt" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="6dip"
+                        android:background="#aa0000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:background="@android:color/white"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:orientation="horizontal" >
+
+                        <View
+                            android:layout_width="20dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginTop="10dip"
+                            android:background="@drawable/new_people" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:layout_marginRight="20dip"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:layout_marginTop="10dip"
+                                android:text="李丽楠"
+                                android:textColor="#000000"
+                                android:textSize="10pt" />
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/xiantiao" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:onClick="linClick"
+                        android:orientation="horizontal"
+                        android:tag="025-85811786" >
+
+                        <View
+                            android:layout_width="20dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginTop="10dip"
+                            android:background="@drawable/new_phone" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:layout_marginRight="20dip"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="025-85811786"
+                                android:textColor="#000000"
+                                android:textSize="10pt" />
+
+                            <View
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/xiantiao" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dip"
+                        android:orientation="horizontal" >
+
+                        <View
+                            android:layout_width="20dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginTop="10dip"
+                            android:background="@drawable/new_mail" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:layout_marginRight="20dip"
+                            android:onClick="onClick"
+                            android:orientation="vertical"
+                            android:tag="yzhang3380@163.com" >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="yzhang3380@163.com"
+                                android:textColor="#000000"
+                                android:textSize="10pt" />
+
+                            <View
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/xiantiao" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dip"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="30dip"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dip"
+                        android:background="#aa0000"
+                        android:gravity="left"
+                        android:text="部门副主任"
+                        android:textColor="@android:color/white"
+                        android:textSize="10pt" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="6dip"
+                        android:background="#aa0000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:background="@android:color/white"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:orientation="horizontal" >
+
+                        <View
+                            android:layout_width="20dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginTop="10dip"
+                            android:background="@drawable/new_people" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:layout_marginRight="20dip"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:layout_marginTop="10dip"
+                                android:text="徐    燕"
+                                android:textColor="#000000"
+                                android:textSize="10pt" />
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/xiantiao" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dip"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="30dip"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dip"
+                        android:background="#aa0000"
+                        android:gravity="left"
+                        android:text="书刊验收、典藏及书刊捐赠工作"
+                        android:textColor="@android:color/white"
+                        android:textSize="10pt" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="6dip"
+                        android:background="#aa0000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:background="@android:color/white"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:orientation="horizontal" >
+
+                        <View
+                            android:layout_width="20dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginTop="10dip"
+                            android:background="@drawable/new_people" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:layout_marginRight="20dip"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:layout_marginTop="10dip"
+                                android:text="王伟佳"
+                                android:textColor="#000000"
+                                android:textSize="10pt" />
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/xiantiao" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dip"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="30dip"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dip"
+                        android:background="#aa0000"
+                        android:gravity="left"
+                        android:text="书刊分类、编目"
+                        android:textColor="@android:color/white"
+                        android:textSize="10pt" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="6dip"
+                        android:background="#aa0000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:background="@android:color/white"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:orientation="horizontal" >
+
+                        <View
+                            android:layout_width="20dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginTop="10dip"
+                            android:background="@drawable/new_people" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:layout_marginRight="20dip"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:layout_marginTop="10dip"
+                                android:text="吴桂英"
+                                android:textColor="#000000"
+                                android:textSize="10pt" />
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/xiantiao" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dip"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="30dip"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dip"
+                        android:background="#aa0000"
+                        android:gravity="left"
+                        android:text="文献采访"
+                        android:textColor="@android:color/white"
+                        android:textSize="10pt" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="6dip"
+                        android:background="#aa0000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:background="@android:color/white"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:orientation="horizontal" >
+
+                        <View
+                            android:layout_width="20dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginTop="10dip"
+                            android:background="@drawable/new_people" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dip"
+                            android:layout_marginRight="20dip"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:layout_marginTop="10dip"
+                                android:text="杜友桃"
+                                android:textColor="#000000"
+                                android:textSize="10pt" />
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/xiantiao" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

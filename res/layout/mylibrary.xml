@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 主界面的布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#d3d3d3"
+    android:orientation="vertical" >
+
+    <!-- header -->
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="40dp">
+        <TextView 
+            android:id="@+id/myLibraryTextview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/news_detail_tbar"
+            android:gravity="center_horizontal"
+            android:paddingTop="8dp"
+            android:textSize="8pt"
+            android:textColor="#FFFFFF"/>
+        <Button 
+            android:id="@+id/myLibraryBackButton"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/back_bg1"
+            android:textColor="#ffffff"/>
+        <Button 
+            android:id="@+id/myLibraryCancelButton"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="2.5dp"
+            android:background="@drawable/footer_checked"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="注销"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="8pt"/>
+    </RelativeLayout>
+     <LinearLayout
+            android:id="@+id/imageSlide"
+            android:layout_width="fill_parent"
+            android:layout_height="140dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="5dip"
+            android:orientation="horizontal" >
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/library" />
+        </LinearLayout>
+    <!-- body -->
+   	   <LinearLayout 
+	       android:layout_width="fill_parent"
+	       android:layout_height="fill_parent"
+	       android:orientation="vertical"
+	       android:layout_marginTop="5dip"       	
+	       android:layout_marginLeft="40dip"
+	       android:layout_marginRight="40dip">
+	       <LinearLayout 
+	           android:layout_width="fill_parent"
+	           android:layout_height="wrap_content"
+	           android:orientation="horizontal">
+	           <LinearLayout
+	               android:layout_width="50dip"
+	               android:layout_height="65dip"
+	               android:layout_marginTop="10dip"
+	               android:layout_marginBottom="20dip"
+	               android:layout_weight="1"
+	               android:orientation="vertical" >
+	               <ImageButton 
+	                  android:id="@+id/certificateinformation"
+	                  android:layout_width="fill_parent"
+	                  android:layout_height="50dip"
+	                  android:background="@drawable/mylibrarysesktop"
+	                  android:src="@drawable/test_b_r1_c1" />
+	               <TextView 
+	                  android:layout_width="fill_parent"
+	                  android:text="证件信息"
+	                  android:layout_height="15dip"
+	                  android:textSize="5pt"
+	                  android:textColor="#aa0000"
+	                  android:gravity="center_horizontal" />
+	           </LinearLayout>
+	           <LinearLayout 
+	               android:layout_width="50dip"
+	               android:layout_height="65dip"
+	               android:layout_marginLeft="40dip"
+	               android:layout_marginTop="10dip" 
+	               android:layout_marginBottom="20dip"
+	               android:orientation="vertical"
+	               android:layout_weight="1">
+	               <ImageButton
+	                  android:id="@+id/currentBorrow"
+	                  android:layout_width="fill_parent"
+	                  android:layout_height="50dip"
+	                  android:background="@drawable/mylibrarysesktop"
+	                  android:src="@drawable/test_b_r3_c2" />
+	               <TextView 
+	                  android:layout_width="fill_parent"
+	                  android:layout_height="15dip"
+	                  android:textSize="5pt"
+	                  android:text="当前借阅"
+	                  android:textColor="#aa0000"
+	                  android:gravity="center_horizontal" />
+	           </LinearLayout>
+		       <LinearLayout 
+	               android:layout_width="50dip"
+	               android:layout_height="65dip"           
+	               android:layout_marginTop="10dip"
+	               android:layout_marginLeft="40dip"
+	               android:layout_marginBottom="20dip"
+	               android:layout_weight="1"
+	               android:orientation="vertical" >
+	               <ImageButton
+	                  android:id="@+id/borrowHistory"
+	                  android:layout_width="fill_parent"
+	                  android:layout_height="50dip"
+	                  android:background="@drawable/mylibrarysesktop"
+	                  android:src="@drawable/test_b_r3_c3"/>
+	               <TextView 
+	                  android:layout_width="fill_parent"
+	                  android:layout_height="15dip"
+	                  android:textSize="5pt"
+	                  android:text="借阅历史"
+	                  android:textColor="#aa0000"
+	                  android:gravity="center_horizontal" />
+		       </LinearLayout>
+	       </LinearLayout>
+	       
+	       
+	       
+	       <LinearLayout 
+	           android:layout_width="fill_parent"
+	           android:layout_height="wrap_content"
+	           android:orientation="horizontal">
+	           <LinearLayout
+	               android:layout_width="50dip"
+	               android:layout_height="65dip"
+	               android:layout_marginTop="10dip"
+	               android:layout_marginBottom="20dip"
+	               android:layout_weight="1"
+	               android:orientation="vertical" >
+	               <ImageButton 
+	                  android:id="@+id/readerSuggestion"
+	                  android:layout_width="fill_parent"
+	                  android:layout_height="50dip"
+	                  android:background="@drawable/mylibrarysesktop"
+	                  android:src="@drawable/test_b_r1_c3" />
+	               <TextView 
+	                  android:layout_width="fill_parent"
+	                  android:text="读者荐购"
+	                  android:layout_height="15dip"
+	                  android:textSize="5pt"
+	                  android:textColor="#aa0000"
+	                  android:gravity="center_horizontal" />
+	           </LinearLayout>
+	           <LinearLayout 
+	               android:layout_width="50dip"
+	               android:layout_height="65dip"
+	               android:layout_marginLeft="40dip"
+	               android:layout_marginTop="10dip" 
+	               android:layout_marginBottom="20dip"
+	               android:orientation="vertical"
+	               android:layout_weight="1">
+	               <ImageButton 
+	                  android:id="@+id/breakRulesInfomation"
+	                  android:layout_width="fill_parent"
+	                  android:layout_height="50dip"
+	                  android:background="@drawable/mylibrarysesktop"
+	                  android:src="@drawable/test_b_r4_c3" />
+	               <TextView 
+	                  android:layout_width="fill_parent"
+	                  android:text="违章信息"
+	                  android:layout_height="15dip"
+	                  android:textSize="5pt"
+	                  android:textColor="#aa0000"
+	                  android:gravity="center_horizontal" />
+	           </LinearLayout>
+		       <LinearLayout 
+	               android:layout_width="50dip"
+	               android:layout_height="65dip"           
+	               android:layout_marginTop="10dip"
+	               android:layout_marginLeft="40dip"
+	               android:layout_marginBottom="20dip"
+	               android:layout_weight="1"
+	               android:orientation="vertical" >
+	               <ImageButton
+	                  android:id="@+id/reservationInfomation"
+	                  android:layout_width="fill_parent"
+	                  android:layout_height="50dip"
+	                  android:background="@drawable/mylibrarysesktop"
+	                  android:src="@drawable/test_b_r4_c2"/>
+	               <TextView 
+	                  android:layout_width="fill_parent"
+	                  android:layout_height="15dip"
+	                  android:textSize="5pt"
+	                  android:text="预约信息"
+	                  android:textColor="#aa0000"
+	                  android:gravity="center_horizontal" />
+		       </LinearLayout>
+	       </LinearLayout>
+	       <LinearLayout 
+	           android:layout_width="fill_parent"
+	           android:layout_height="wrap_content"
+	           android:orientation="horizontal">
+	           <LinearLayout
+	               android:layout_width="50dip"
+	               android:layout_height="65dip"
+	               android:layout_marginTop="10dip"
+	               android:layout_marginBottom="20dip"
+	               android:layout_weight="1"
+	               android:visibility="gone"
+	               android:orientation="vertical" >
+	               <ImageButton
+	                  android:layout_width="fill_parent"
+	                  android:layout_height="50dip"
+	                  android:background="@drawable/mylibrarysesktop"
+	                  android:src="@drawable/test_b_r2_c1" />
+	               <TextView 
+	                  android:layout_width="fill_parent"
+	                  android:layout_height="15dip"
+	                  android:textSize="5pt"
+	                  android:text="我的文献"
+	                  android:textColor="#aa0000"
+	                  android:gravity="center_horizontal" />
+	           </LinearLayout>
+	           <LinearLayout 
+	               android:layout_width="50dip"
+	               android:layout_height="65dip"
+	               android:layout_marginLeft="40dip"
+	               android:layout_marginTop="10dip" 
+	               android:layout_marginBottom="20dip"
+	               android:orientation="vertical"
+	               android:layout_weight="1">
+	           </LinearLayout>
+		       <LinearLayout 
+	               android:layout_width="50dip"
+	               android:layout_height="65dip"           
+	               android:layout_marginTop="10dip"
+	               android:layout_marginLeft="40dip"
+	               android:layout_marginBottom="20dip"
+	               android:layout_weight="1"
+	               android:orientation="vertical" >
+		       </LinearLayout>
+	       </LinearLayout>
+     </LinearLayout>
+</LinearLayout>

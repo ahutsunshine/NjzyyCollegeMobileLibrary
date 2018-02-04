@@ -1,0 +1,160 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:background="@color/background" />
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:background="@drawable/tbar_1"
+                android:orientation="horizontal" >
+
+                <RadioGroup
+                    android:id="@+id/group"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dip"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/tbar_1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:id="@+id/layout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/new_selector_footer_checked" >
+
+                        <RadioButton
+                            android:id="@+id/radio1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/new_selector_footer_checked"
+                            android:button="@null"
+                            android:checked="true"
+                            android:drawableTop="@drawable/new_selector_footer_home"
+                            android:gravity="center_horizontal"
+                            android:padding="5dip"
+                            android:text="首页"
+                            android:textSize="12dip" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/new_selector_footer_checked" >
+
+                        <RadioButton
+                            android:id="@+id/radio2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/new_selector_footer_checked"
+                            android:button="@null"
+                            android:drawableTop="@drawable/new_selector_footer_news"
+                            android:gravity="center_horizontal"
+                            android:padding="5dip"
+                            android:text="新闻"
+                            android:textSize="12dip" />
+
+                        <TextView
+                            android:id="@+id/tvNews"
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_marginLeft="-16dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_toRightOf="@id/radio2"
+                            android:background="@drawable/tab_newmessage"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/new_selector_footer_checked" >
+
+                        <RadioButton
+                            android:id="@+id/radio3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/new_selector_footer_checked"
+                            android:button="@null"
+                            android:drawableTop="@drawable/new_selector_footer_ksearch"
+                            android:gravity="center_horizontal"
+                            android:padding="5dip"
+                            android:text="知识检索"
+                            android:textSize="12dip" />
+                    </RelativeLayout>
+                    
+                    <RelativeLayout
+                        android:id="@+id/layout4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/new_selector_footer_checked" >
+
+                        <RadioButton
+                            android:id="@+id/radio4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/new_selector_footer_checked"
+                            android:button="@null"
+                            android:drawableTop="@drawable/new_selector_footer_bsearch"
+                            android:gravity="center_horizontal"
+                            android:padding="5dip"
+                            android:text="馆藏查询"
+                            android:textSize="12dip" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/new_selector_footer_checked" >
+
+                        <RadioButton
+                            android:id="@+id/radio5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/new_selector_footer_checked"
+                            android:button="@null"
+                            android:drawableTop="@drawable/new_selector_footer_camera"
+                            android:gravity="center_horizontal"
+                            android:padding="5dip"
+                            android:text="校园风采"
+                            android:textSize="12dip" />
+                    </RelativeLayout>
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

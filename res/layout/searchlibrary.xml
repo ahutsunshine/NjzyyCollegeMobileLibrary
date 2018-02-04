@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#d3d3d3"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/news_detail_tbar"
+            android:text="馆 藏 查 询"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="19dip"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dip"
+                android:layout_marginRight="50dip"
+                android:background="@drawable/new_shape_all"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5dp" >
+				<ImageView
+				   android:layout_width="50dip"
+				   android:layout_height="60dip"
+				   android:layout_gravity="center_horizontal"
+				   android:layout_marginTop="10dip"
+				   android:background="@drawable/bsearch_image"
+				   /> 
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dip"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/search_filter"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/etKeyword"
+                        android:layout_width="130dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dip"
+                   	 	android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="请输入关键词"
+                    	android:textSize="8pt"  />
+<!--						<ImageView 
+					    android:id="@+id/imgcamerasearch"					    
+					   android:layout_width="20dip"
+					   android:layout_height="wrap_content"
+					   android:src="@drawable/subselect_2" />-->
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="imgClick"
+                        android:src="@android:drawable/ic_btn_speak_now" />
+                    
+                </LinearLayout>
+
+                 
+                <Button
+                    android:id="@+id/searchBooklist"
+                    android:layout_width="140dip"
+                    android:layout_height="30dip"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dip"
+                    android:background="@drawable/book_search" />
+              
+                 <ImageView 
+                     android:id="@+id/imgcamerasearch"	
+                   android:layout_width="30dp"
+                   android:layout_height="30dp"
+                   android:layout_gravity="center_horizontal"
+                   android:layout_marginTop="5dp"
+                   android:background="@drawable/subselect_2" />
+<!--                <TextView 
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal"
+                   android:text="条码扫描"
+                   android:textColor="#ffffff"
+                   android:textSize="5pt" />-->
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

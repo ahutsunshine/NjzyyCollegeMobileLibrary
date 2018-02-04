@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/user_info_backgroud"
+    android:orientation="vertical" >
+
+	<RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:onClick="linkClick">
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/news_detail_tbar"
+            android:gravity="center_horizontal"
+            android:paddingTop="8dp"
+            android:textSize="8pt"
+            android:textColor="#FFFFFF"
+            android:text="当前借阅"/>
+        <Button 
+            android:id="@+id/myCurrentBorrowBackButton"
+            android:layout_width="42dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/back_bg1"
+            android:textColor="#ffffff"/>
+    </RelativeLayout>
+    
+	<LinearLayout 
+	    android:id="@+id/myCurrentBorrowLayout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:visibility="gone"
+	    android:orientation="vertical">
+	    <ListView 
+	        android:id="@android:id/list"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:drawSelectorOnTop="false"
+	        android:divider="@null"
+	        android:scrollbars="vertical"/>
+	</LinearLayout>
+	
+    <LinearLayout 
+	    android:id="@+id/myCurrentBorrowNoneLinearLayout"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		android:layout_weight="1" 
+		android:background="#FFF"
+		android:orientation="vertical" 
+		android:gravity="center"
+		android:visibility="gone">
+		<ImageView 
+		    android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:src="@drawable/none" />
+		<TextView 
+		    android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+		    android:gravity="center_horizontal"
+			android:text="对不起，没有找到您想要的结果" 
+			android:textColor="#cccccc"
+			android:textSize="11dip" 
+			android:layout_marginTop="10dip" />
+	</LinearLayout>
+	
+    <LinearLayout 
+	    android:id="@+id/myCurrentBorrowWaitLayout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:gravity="center_horizontal">
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_vertical"
+	        android:orientation="vertical">
+	        <ProgressBar       
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:visibility="visible" />
+	        <TextView
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"           
+	            android:layout_marginTop="20dip"
+	            android:gravity="center_horizontal"
+	            android:text="@string/xlistview_header_hint_loading" />
+	    </LinearLayout>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<LinearLayout android:background="@drawable/help4" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_height="fill_parent" 
+    android:layout_width="fill_parent" >   
+<!--      <Button 
+         android:id="@+id/start"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="点击这里"
+             android:textSize="10pt"
+             android:focusable="true"
+             
+             android:layout_marginTop="80dip"
+             android:textColor="@android:color/white"
+            
+            
+           />-->
+       </LinearLayout>

@@ -1,0 +1,35 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    >
+    <RelativeLayout  
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/newBookbutton"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="馆 长 致 辞"
+            android:textSize="8pt"
+            android:textColor="@android:color/white"
+            android:background="@drawable/news_detail_tbar"
+            />
+       <Button 
+            android:id="@+id/HtalkBackButton"
+            android:layout_width="42dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/back_bg1"
+            android:textColor="#ffffff"/>
+        </RelativeLayout>
+        <LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_weight="1">
+		<WebView android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:id="@+id/webview"			
+			 />
+	</LinearLayout>
+        </LinearLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="15dip" >
+
+        <!-- title -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:background="@drawable/new_shape_all"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="10dip"
+                android:text="篇名"
+                android:textColor="#CD3700" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="1dip"
+                android:gravity="center_horizontal"
+                android:padding="5dip"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <!-- content -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:background="@drawable/new_shape_all"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="10dip"
+                android:text="描述"
+                android:textColor="#CD3700" />
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="25dip"
+                android:layout_marginTop="12dip"
+                android:lineSpacingExtra="5dip"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- foot bar -->
+
+        <LinearLayout
+            android:id="@+id/footer"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="8dip"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <!--
+                 <Button android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:text="阅读文件"
+				android:background="@drawable/button_selector"
+				android:layout_marginBottom="5dip" android:textColor="#fff"
+				android:textSize="20sp" android:onClick="controlClick" android:tag="0" />
+            -->
+
+            <Button
+                 android:id="@+id/sendemail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dip"
+                android:background="@drawable/button_selector"
+                android:onClick="controlClick"
+                android:tag="0"
+                android:text="发送邮箱"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/download"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dip"
+                android:background="@drawable/button_selector"
+                android:onClick="controlClick"
+                android:tag="1"
+                android:text="下载文件"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+            <Button
+                android:id="@+id/read"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dip"
+                android:background="@drawable/button_selector"
+                android:onClick="controlClick"
+                android:tag="1"
+                android:text="借阅"
+                android:textColor="#fff"
+                android:textSize="20sp" 
+                android:visibility="gone"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

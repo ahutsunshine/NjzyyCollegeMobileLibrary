@@ -1,0 +1,335 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myattr="http://schemas.android.com/apk/res/example.firstmobilelibrary"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#d3d3d3"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/news_detail_tbar"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="#ffffff"
+            android:textSize="19dip"
+            android:textStyle="bold" />
+
+    </LinearLayout>	
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/imageSlide"
+            android:layout_width="fill_parent"
+            android:layout_height="110dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="5dip"
+            android:orientation="horizontal" >
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/image" />
+        </LinearLayout>
+        <!--
+        <example.defineView.SlidingSwitcherView
+            android:id="@+id/slidingLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="110dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="5dip"
+            myattr:auto_play="false" >
+
+            <LinearLayout
+                android:id="@+id/imageSlide"
+                android:layout_width="fill_parent"
+                android:layout_height="100dip"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/image" />
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/image" />
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/image" />
+
+  
+                  <Button  
+                android:layout_width="fill_parent"  
+                android:layout_height="fill_parent"  
+                android:background="@drawable/image" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/visibledot"
+                android:layout_width="60dp"
+                android:layout_height="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </example.defineView.SlidingSwitcherView>
+        -->
+		
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/imageSlide" >
+
+            <LinearLayout
+                android:id="@+id/selections"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="40dip"
+                android:layout_marginRight="40dip"
+                android:layout_marginTop="6dip"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/selections_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                         android:layout_width="65dip"
+                        android:layout_height="80dip"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginTop="10dip"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageButton
+                            android:id="@+id/department"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dip"
+                            android:background="@drawable/subselect_1" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="20dip"
+                            android:gravity="center_horizontal"
+                            android:text="部门简介"
+                            android:textColor="#aa0000"
+                            android:textSize="6pt" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="65dip"
+                        android:layout_height="80dip"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginLeft="40dip"
+                        android:layout_marginTop="10dip"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageButton
+                            android:id="@+id/camerasearch"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dip"
+                            android:background="@drawable/subselect_2" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="20dip"
+                            android:gravity="center_horizontal"
+                            android:text="条码扫描"
+                            android:textColor="#aa0000"
+                            android:textSize="6pt" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="65dip"
+                        android:layout_height="80dip"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginLeft="40dip"
+                        android:layout_marginTop="10dip"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageButton
+                            android:id="@+id/floorInfo"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dip"
+                            android:background="@drawable/subselect_3" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="20dip"
+                            android:gravity="center_horizontal"
+                            android:text="楼层介绍"
+                            android:textColor="#aa0000"
+                            android:textSize="6pt" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/selections_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+				
+                    <LinearLayout
+                        android:layout_width="65dip"
+                        android:layout_height="80dip"
+                        android:layout_marginBottom="20dip"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageButton
+                            android:id="@+id/myLibrary"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dip"
+                            android:background="@drawable/subselect_4" />
+                          <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="20dip"
+                            android:gravity="center_horizontal"
+                            android:text="i 图书馆"
+                            android:textColor="#aa0000"
+                            android:textSize="6pt" />
+                    </LinearLayout>               				
+                    <LinearLayout
+                       android:layout_width="65dip"
+                        android:layout_height="80dip"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginLeft="40dip"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageButton
+                            android:id="@+id/newbooklist"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dip"
+                            android:background="@drawable/subselect_5" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="20dip"
+                            android:gravity="center_horizontal"
+                            android:text="新书通报"
+                            android:textColor="#aa0000"
+                            android:textSize="6pt" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="65dip"
+                        android:layout_height="80dip"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginLeft="40dip"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageButton
+                            android:id="@+id/talkButton"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dip"
+                            android:background="@drawable/subselect_6" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="20dip"
+                            android:gravity="center_horizontal"
+                            android:text="讲座信息"
+                            android:textColor="#aa0000"
+                            android:textSize="6pt" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/selections_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="65dip"
+                        android:layout_height="80dip"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageButton
+                            android:id="@+id/setting"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dip"
+                            android:background="@drawable/subselect_7" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="20dip"
+                            android:gravity="center_horizontal"
+                            android:text="设     置"
+                            android:textColor="#aa0000"
+                            android:textSize="6pt" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="65dip"
+                        android:layout_height="80dip"
+                        android:layout_marginLeft="40dip"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageButton
+                            android:id="@+id/help"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dip"
+                            android:background="@drawable/subselect_8" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="20dip"
+                            android:gravity="center_horizontal"
+                            android:text="帮     助"
+                            android:textColor="#aa0000"
+                            android:textSize="6pt" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="65dip"
+                        android:layout_height="80dip"
+                        android:layout_marginLeft="40dip"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <ImageButton
+                            android:id="@+id/feedback"
+                            android:layout_width="fill_parent"
+                            android:layout_height="50dip"
+                            android:background="@drawable/subselect_9" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="20dip"
+                            android:gravity="center_horizontal"
+                            android:text="意见反馈"
+                            android:textColor="#aa0000"
+                            android:textSize="6pt" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

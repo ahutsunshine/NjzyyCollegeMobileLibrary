@@ -1,0 +1,33 @@
+<!--  <LinearLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent">-->
+    <FrameLayout 
+       android:layout_width="fill_parent"  xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_height="fill_parent"
+       android:orientation="vertical"  
+        >
+     <example.defineView.CustomViewPager
+         android:layout_height="wrap_content" 
+         android:layout_width="fill_parent" 
+         android:id="@+id/viewpager"/>
+     <LinearLayout 
+         android:id="@+id/losedot"
+        android:layout_width="fill_parent"
+        android:layout_height="35dip"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:background="#33000000"      
+         >
+       <View android:id="@+id/dot01"
+           android:background="@drawable/help_dot_focused"
+          style="@style/help_dot_style"  />
+       <View android:id="@+id/dot02"
+           style="@style/help_dot_style"
+           android:layout_marginLeft="10dip" />  			<View android:id="@+id/dot03"
+			    android:layout_marginLeft="10dip"
+			    style="@style/help_dot_style"/>
+			<View android:id="@+id/dot04"
+			    android:layout_marginLeft="10dip"
+			    style="@style/help_dot_style"/>
+			 
+     </LinearLayout>  
+    </FrameLayout>

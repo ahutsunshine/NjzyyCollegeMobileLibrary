@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/settingbutton"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/news_detail_tbar"
+            android:text="意 见 反 馈"
+            android:textColor="@android:color/white"
+            android:textSize="8pt" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="43dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2.5dp"
+            android:background="@drawable/button_details_gohome"
+            android:textColor="#ffffff" />
+
+        <ImageView
+            android:id="@+id/fdBackButton"
+            android:layout_width="54dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/flipper_head_publish" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/newsfeedpublish_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dip"
+        android:layout_weight="1"
+        android:background="#00000000"
+        android:gravity="top"
+        android:hint="请输入您的反馈意见，我们会努力改进哦"
+        android:maxLength="140"
+        android:padding="8dip"
+        android:textColor="#000000"
+        android:textSize="16sp" >
+ 
+        <requestFocus />
+    </EditText>
+ 
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:background="@drawable/publisher_split_line" />
+ 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:orientation="horizontal" >
+ 
+        <LinearLayout
+            android:layout_width="100dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:padding="8dip" >
+ 
+            <TextView
+                android:id="@+id/newsfeedpublish_count"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#80333333"
+                android:textSize="14sp" />
+ 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="/60"
+                android:textColor="#80333333"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

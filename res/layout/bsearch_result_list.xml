@@ -1,0 +1,44 @@
+﻿<LinearLayout 
+    android:layout_width="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent" android:background="#d3d3d3"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+         >
+ <RelativeLayout  
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/newBookbutton"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="查 询 结 果"
+            android:textSize="8pt"
+            android:textColor="@android:color/white"
+            android:background="@drawable/news_detail_tbar"
+            />
+         <Button 
+            android:id="@+id/back"
+            android:layout_width="42dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/back_bg1"
+            android:textColor="#ffffff"/>
+          </RelativeLayout>   
+ <ListView 
+     android:id="@+id/lvList"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:cacheColorHint="@android:color/transparent"
+     android:fadingEdge="none"
+     android:divider="#d3d3d3"
+     ></ListView>
+</LinearLayout>
+ 
+
+
+</LinearLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- header -->
+
+    <com.mobilelibrary.widget.HeaderWidget
+        xmlns:header="http://schemas.android.com/com.mobilelibrary"
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        header:left_text="楼层"
+        header:middle_text="" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/new_selector_whole_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="18dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="32dip"
+                android:background="@drawable/whole_top_bg"
+                android:orientation="horizontal" >
+
+                <RadioGroup
+                    android:id="@+id/group"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radio1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/new_selector_floor_bg"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:paddingLeft="0dip"
+                        android:tag="1"
+                        android:text="一层"
+                        android:textColor="@drawable/new_selector_floor"
+                        android:textSize="11dip" >
+                    </RadioButton>
+
+                    <View
+                        android:layout_width="1.0px"
+                        android:layout_height="32dip"
+                        android:background="@drawable/new_shape_floor" />
+
+                    <RadioButton
+                        android:id="@+id/radio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/new_selector_floor_bg"
+                        android:button="@null"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:paddingLeft="0dip"
+                        android:tag="2"
+                        android:text="二层"
+                        android:textColor="@drawable/new_selector_floor"
+                        android:textSize="11dip" />
+
+                    <View
+                        android:layout_width="1.0px"
+                        android:layout_height="32dip"
+                        android:background="@drawable/new_shape_floor" />
+
+                    <RadioButton
+                        android:id="@+id/radio3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/new_selector_floor_bg"
+                        android:button="@null"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:paddingLeft="0dip"
+                        android:tag="3"
+                        android:text="三层"
+                        android:textColor="@drawable/new_selector_floor"
+                        android:textSize="11dip" />
+
+                    <View
+                        android:layout_width="1.0px"
+                        android:layout_height="32dip"
+                        android:background="@drawable/new_shape_floor" />
+
+                    <RadioButton
+                        android:id="@+id/radio4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/new_selector_floor_bg"
+                        android:button="@null"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:paddingLeft="0dip"
+                        android:tag="4"
+                        android:text="四层"
+                        android:textColor="@drawable/new_selector_floor"
+                        android:textSize="11dip" />
+
+                    <View
+                        android:layout_width="1.0px"
+                        android:layout_height="32dip"
+                        android:background="@drawable/new_shape_floor" />
+
+                    <RadioButton
+                        android:id="@+id/radio5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/new_selector_floor_bg"
+                        android:button="@null"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:paddingLeft="0dip"
+                        android:tag="5"
+                        android:text="五层"
+                        android:textColor="@drawable/new_selector_floor"
+                        android:textSize="11dip" />
+
+                    <View
+                        android:layout_width="1.0px"
+                        android:layout_height="32dip"
+                        android:background="@drawable/new_shape_floor" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffffff" />
+    </LinearLayout>
+    <!-- footer -->
+
+   <!--  <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/whole_top_bg"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/scaleMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:onClick="imgClick"
+            android:src="@drawable/new_footer_min" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/scaleMax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dip"
+            android:onClick="imgClick"
+            android:src="@drawable/new_footer_max" />
+    </LinearLayout> -->
+
+</LinearLayout>
